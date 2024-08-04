@@ -24,7 +24,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="143more/quiz" element={<Quiz />} />
-      <Route path="143more/error" element={<Error />} />
+      <Route path="https://ilovejou143.github.io/143more/error" element={<Error />} />
       <Route path="143more/detour" element={<Detour />} />
       <Route path="143more/boo" element={<Jumpscare />} />
       <Route path="143more/question1" element={<Question1 />} />
