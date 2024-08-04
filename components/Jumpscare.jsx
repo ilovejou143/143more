@@ -30,7 +30,7 @@ const Jumpscare = () => {
       document.body.classList.add("jumpscare");
 
       const timer = setTimeout(() => {
-        navigate("#/quiz");
+        navigate("/quiz");
       }, 1750);
 
       return () => {

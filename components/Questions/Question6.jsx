@@ -9,7 +9,7 @@ const Question6 = () => {
       </div>
       <textarea />
       <div className="d-flex justify-content-center">
-        <a href="/question7" className="btn btn-success">
+        <a href="#/question7" className="btn btn-success">
           Submit
         </a>
       </div>

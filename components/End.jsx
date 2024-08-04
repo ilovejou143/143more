@@ -9,7 +9,7 @@ const End = () => {
         <span style={{ color: "#D31243" }}> HAPPY ANNIVERSARY!!! :D</span>
       </p>
 
-      <a href="/" className="btn btn-primary">
+      <a href="#" className="btn btn-primary">
         Go back to the main page
       </a>
     </div>
