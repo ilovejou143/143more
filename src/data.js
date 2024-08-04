@@ -1,31 +1,31 @@
 export default [
   {
-    src: "../public/image62.PNG",
+    src: "image62.png",
     title: "annoyance.",
     description: "March 8th, 2023",
   },
   {
-    src: "../public/image32.PNG",
+    src: "image32.png",
     title: "the one and only.",
     description: "November 21st, 2023",
   },
   {
-    src: "../public/image31.PNG",
+    src: "image31.png",
     title: "balposer true identity revealed",
     description: "November 20th, 2023",
   },
   {
-    src: "../public/image1.JPG",
+    src: "image1.jpg",
     title: "Something you should continue doing",
     description: "March 17th, 2023",
   },
   {
-    src: "./public/image51.png",
+    src: ".image51.png",
     title: "❤️∆😳",
     description: "July 30th, 2023",
   },
   {
-    src: "public/image25.jpg",
+    src: "image25.jpg",
     title:
       "mario.\n" +
       "\n" +
@@ -48,27 +48,27 @@ export default [
     description: "October 20th, 2023",
   },
   {
-    src: "image/image30.JPG",
+    src: "image30.jpg",
     title: "WE MAKIN IT TO COA WITH THIS ONE 🔥🔥🔥",
     description: "November 20th, 2023",
   },
   {
-    src: "../public/image64.png",
+    src: "image64.png",
     title: "The Beginning of the Legendary baldgoosie42",
     description: "March 9th, 2023",
   },
   {
-    src: "../public/image73.png",
+    src: "image73.png",
     title: "8 MAN OR NO MAN",
     description: "April 6th, 2023",
   },
   {
-    src: "../public/gif2.gif",
+    src: "gif2.gif",
     title: "the greatest vault",
     description: "April 30th, 2023",
   },
   {
-    src: "../public/image47.png",
+    src: "image47.png",
     title: '"Old but gold"',
     description: "March 23rd, 2023",
   },
