@@ -391,14 +391,14 @@ const Modal = ({ isOpen, onClose, image }) => {
           {image && (
             <img
               className="rounded mb-3 no-cursor"
-              src="../public/image10-2.png"
+              src="image10-2.png"
               alt={image.title}
             />
           )}
           <div className="mt-3">
             <h2>{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img src="../public/image10-3.gif" alt="what if i just" />
+            <img src="image10-3.gif" alt="what if i just" />
           </div>
         </div>
       </div>
@@ -493,7 +493,7 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image25.jpg")) {
     // mario
 
-    const audio = new Audio("../public/mario.mp3");
+    const audio = new Audio("mario.mp3");
 
     audio.addEventListener("loadedmetadata", () => {
       audio.currentTime = 0.7;

@@ -20,7 +20,7 @@ export default [
     description: "March 17th, 2023",
   },
   {
-    src: ".image51.png",
+    src: "image51.png",
     title: "❤️∆😳",
     description: "July 30th, 2023",
   },

@@ -58,7 +58,7 @@ const Detour = () => {
           safe, as they can track you down.
         </p>
       </div>
-      <a href="/boo" className="scary-button run-button">
+      <a href="#/boo" className="scary-button run-button">
         Run.
       </a>
     </div>

@@ -17,7 +17,7 @@ const Quiz = () => {
         please do not pay much attention to it. Thank you.
       </p>
       <p className="fs-5 mb-5">Click the button below to start the quiz!</p>
-      <a href="/question1">Start Quiz!</a>
+      <a href="#/question1">Start Quiz!</a>
     </div>
   );
 };

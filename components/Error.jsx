@@ -23,7 +23,7 @@ const Error = () => {
         It does, however, require taking a little detour.
       </h3>
       <p>⬇⬇⬇⬇⬇</p>
-      <a href="/detour" className="scary-button">
+      <a href="#/detour" className="scary-button">
         Detour
       </a>
     </div>
