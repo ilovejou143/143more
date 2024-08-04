@@ -25,7 +25,7 @@ const Images = () => {
         {data.map((image, index) => (
           <img
             key={index}
-            src={image.src}
+            src={`${import.meta.env.BASE_URL}${image.src}`}
             alt={image.title}
             onClick={() =>
               handleImageClick(image.title, image.description, image)

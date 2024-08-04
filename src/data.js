@@ -73,12 +73,12 @@ export default [
     description: "March 23rd, 2023",
   },
   {
-    src: "../public/image4.jpg",
+    src: "image4.jpg",
     title: "Help me!",
     description: "March 25th, 2023",
   },
   {
-    src: "../public/image18.png",
+    src: "image18.png",
     title: "gerald with a j",
     description: "July 24th, 2023",
   },
