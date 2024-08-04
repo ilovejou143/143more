@@ -8,17 +8,17 @@ const Modal = ({ isOpen, onClose, image }) => {
   if (image.src.includes("mystery.png")) {
     // clerk
 
-    image.src = "../public/jumpscare.jpg";
+    image.src = "jumpscare.jpg";
     image.title = "SWIMSUIT CLERK JUMPSCARE !!!!!";
     image.description = "September 1st, 1939";
 
-    const audio = new Audio("../public/lol.mp3");
+    const audio = new Audio("lol.mp3");
     audio.volume = 0.2;
     audio.play();
   } else if (image.src.includes("mystery2.png")) {
     // pilot
 
-    const audio = new Audio("../public/fart.mp3");
+    const audio = new Audio("fart.mp3");
     audio.play();
 
     return (
@@ -34,7 +34,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           {image && (
             <img
               className="rounded mb-3 no-cursor"
-              src="../public/jumpscare2.png"
+              src="jumpscare2.png"
               alt="pilot fart"
               style={{ width: "400px" }}
             />
@@ -42,31 +42,31 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>THE FARTING!?</h2>
             <img
-              src="../public/fartlore.png"
+              src="fartlore.png"
               alt="chat je pe te fart lore"
               style={{ cursor: "default" }}
             />
-            <img src="../public/fart2.png" alt="woffle" />
+            <img src="fart2.png" alt="woffle" />
           </div>
         </div>
       </div>
     );
   } else if (
     image.src.includes("mystery4.png") ||
-    image.src.includes("../public/image84.png")
+    image.src.includes("image84.png")
   ) {
     // zixuan house jumpscare
 
     if (image.src.includes("mystery4.png")) {
-      const audio = new Audio("../public/lol.mp3");
-      const audio1 = new Audio("../public/trash.mp3");
-      const audio2 = new Audio("../public/vineboom.mp3");
-      const audio3 = new Audio("../public/sus.mp3");
-      const audio4 = new Audio("../public/evildentist-aids.mp3");
-      const audio5 = new Audio("../public/fart.mp3");
-      const audio6 = new Audio("../public/fyou.mp3");
-      const audio7 = new Audio("../public/gay.mp3");
-      const audio8 = new Audio("../public/zixuangamging.mp3");
+      const audio = new Audio("lol.mp3");
+      const audio1 = new Audio("trash.mp3");
+      const audio2 = new Audio("vineboom.mp3");
+      const audio3 = new Audio("sus.mp3");
+      const audio4 = new Audio("evildentist-aids.mp3");
+      const audio5 = new Audio("fart.mp3");
+      const audio6 = new Audio("fyou.mp3");
+      const audio7 = new Audio("gay.mp3");
+      const audio8 = new Audio("zixuangamging.mp3");
 
       audio.volume = 0.2;
       audio4.volume = 0.2;
@@ -90,7 +90,7 @@ const Modal = ({ isOpen, onClose, image }) => {
       }, 4000);
     }
 
-    image.src = "../public/image84.png";
+    image.src = "image84.png";
 
     return (
       <div className="modal-overlay" onClick={onClose}>
@@ -114,7 +114,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p>{image.description}</p>
             <img
               className="no-cursor"
-              src="../public/gif13.gif"
+              src="gif13.gif"
               alt="zixuan no prisoner"
             />
           </div>
@@ -142,7 +142,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <img
-              src="../public/sunbear.png"
+              src="sunbear.png"
               alt="sunbear"
               className="no-cursor"
             />
@@ -171,7 +171,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <img
-              src="../public/sunbear2.png"
+              src="sunbear2.png"
               alt="sunbear"
               className="no-cursor"
             />
@@ -201,7 +201,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <h2>{image.title}</h2>
             <p>{image.description}</p>
             <img
-              src="../public/gif4.gif"
+              src="gif4.gif"
               alt="xarata gaming"
               className="no-cursor"
             />
@@ -230,7 +230,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             X
           </button>
           <video id="yuu-photo" width="640" height="360" controls autoplay>
-            <source src="../public/yuuphoto.mp4" type="video/mp4" />
+            <source src="yuuphoto.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="mt-3">
@@ -270,7 +270,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <video id="message" width="320" height="240" controls autoplay>
-              <source src="../public/xaratamessage.mp4" type="video/mp4" />
+              <source src="xaratamessage.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -298,7 +298,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             X
           </button>
           <video id="foggy" width="640" height="360" controls autoplay>
-            <source src="../public/oldbutgold.mp4" type="video/mp4" />
+            <source src="oldbutgold.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="mt-3">
@@ -311,7 +311,7 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image85.png")) {
     // forward dance
 
-    const audio = new Audio("../public/woohoo.mp3");
+    const audio = new Audio("woohoo.mp3");
     audio.currentTime = 1.3;
     audio.play();
 
@@ -335,7 +335,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <img
-              src="../public/forwarddance.gif"
+              src="forwarddance.gif"
               alt="WOOHOOOYEEEEEAH"
               style={{ cursor: "default" }}
             />
@@ -368,7 +368,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p>{image.description}</p>
             <img
               className="rounded mb-3 no-cursor"
-              src="../public/zixuan.gif"
+              src="zixuan.gif"
               alt="zixuan 5 sec kite"
             />
           </div>
@@ -426,7 +426,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img src="../public/mabye.png" alt="mabye" />
+            <img src="mabye.png" alt="mabye" />
           </div>
         </div>
       </div>
@@ -454,7 +454,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img src="../public/gif3.gif" alt="ducky gaming" />
+            <img src="gif3.gif" alt="ducky gaming" />
           </div>
         </div>
       </div>
@@ -462,7 +462,7 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image130.png")) {
     // evil dentist
 
-    const audio = new Audio("../public/evildentist-aids.mp3");
+    const audio = new Audio("evildentist-aids.mp3");
     audio.volume = 0.025;
     audio.play();
 
@@ -479,7 +479,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           {image && (
             <img
               className="rounded mb-3 no-cursor"
-              src="../public/image130-2.png"
+              src="image130-2.png"
               alt={image.title}
             />
           )}
@@ -503,7 +503,7 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image19.png")) {
     // troll
 
-    const audio = new Audio("../public/troll.mp3");
+    const audio = new Audio("troll.mp3");
     audio.volume = 0.3;
 
     setTimeout(() => {
@@ -514,18 +514,18 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image35.jpg")) {
     // growl
 
-    const audio = new Audio("../public/growl.mp3");
+    const audio = new Audio("growl.mp3");
     audio.currentTime = 1;
     audio.play();
   } else if (image.src.includes("image50.png")) {
     // zixuan gamging
 
-    const audio = new Audio("../public/zixuangamging.mp3");
+    const audio = new Audio("zixuangamging.mp3");
     audio.play();
   } else if (image.src.includes("wafflefartlove")) {
     // waffle loves fart
 
-    const audio = new Audio("../public/fart.mp3");
+    const audio = new Audio("fart.mp3");
     const random = Math.floor(Math.random() * 4000);
 
     setTimeout(() => {
@@ -534,27 +534,27 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("xaratagrass")) {
     // xarata grass
 
-    const audio = new Audio("../public/xaratagrass.mp3");
+    const audio = new Audio("xaratagrass.mp3");
     audio.play();
   } else if (image.src.includes("image156.png")) {
     // kazu is 11
 
-    const audio = new Audio("../public/kazumouse.mp3");
+    const audio = new Audio("kazumouse.mp3");
     audio.play();
   } else if (image.src.includes("image69.png")) {
     // kaira the zebra
 
-    const audio = new Audio("../public/baalder.mp3");
+    const audio = new Audio("baalder.mp3");
     audio.play();
   } else if (image.src.includes("image105.png")) {
     // he's acting sus
 
-    const audio = new Audio("../public/hesactingsus.mp3");
+    const audio = new Audio("hesactingsus.mp3");
     audio.play();
   } else if (image.src.includes("image87.png")) {
     // kazu sleep
 
-    const audio = new Audio("../public/kazusleep.mp3");
+    const audio = new Audio("kazusleep.mp3");
     audio.volume = 0.7;
     audio.play();
 
@@ -580,7 +580,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p id="description">{image.description}</p>
             <img
               className="no-cursor"
-              src="../public/kazuditch.gif"
+              src="kazuditch.gif"
               alt="kazu ditch"
             />
           </div>
@@ -612,7 +612,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p id="description">{image.description}</p>
             <img
               className="no-cursor"
-              src="../public/mcdonald.gif"
+              src="mcdonald.gif"
               alt="mcdonald"
             />
             <p id="description">February 9th, 2024</p>
@@ -645,7 +645,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p id="description">{image.description}</p>
             <img
               className="no-cursor"
-              src="../public/gif9.gif"
+              src="gif9.gif"
               alt="waffle gaming"
             />
           </div>
@@ -679,7 +679,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             <p id="description">{image.description}</p>
             <img
               className="no-cursor"
-              src="../public/gif6.gif"
+              src="gif6.gif"
               alt="never gamging"
             />
           </div>
@@ -689,7 +689,7 @@ const Modal = ({ isOpen, onClose, image }) => {
   } else if (image.src.includes("image58.jpg")) {
     // I WONT SURRENDER
 
-    const audio = new Audio("../public/iwontsurrender.mp3");
+    const audio = new Audio("iwontsurrender.mp3");
     audio.play();
   } else if (image.src.includes("image112.png")) {
     // eminem
@@ -736,7 +736,7 @@ const Modal = ({ isOpen, onClose, image }) => {
 
     containerStyle = { transform: "scale(3.0)" };
 
-    const audio = new Audio("../public/sus.mp3");
+    const audio = new Audio("sus.mp3");
     audio.volume = 0.7;
     audio.play();
 
@@ -745,7 +745,7 @@ const Modal = ({ isOpen, onClose, image }) => {
         <div onClick={(e) => e.stopPropagation()} style={containerStyle}>
           <img
             className="rounded mb-3 no-cursor"
-            src="../public/jerma.png"
+            src="jerma.png"
             alt="jerma"
           />
         </div>
@@ -787,7 +787,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/image101-2.png"
+                src="image101-2.png"
                 alt={image.title}
               />
             )}
@@ -803,7 +803,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/pdffile.jpg"
+                src="pdffile.jpg"
                 alt="edp"
               />
             )}
@@ -822,10 +822,10 @@ const Modal = ({ isOpen, onClose, image }) => {
           >
             <img
               className="rounded mb-3 no-cursor"
-              src="../public/image113-2.png"
+              src="image113-2.png"
               alt={image.title}
             />
-            <img src="../public/gif14.gif" alt="xarata skill issue" />
+            <img src="gif14.gif" alt="xarata skill issue" />
           </div>
         </div>
       );
@@ -842,7 +842,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             />
             <img
               className="no-cursor mx-3"
-              src="../public/gif10.gif"
+              src="gif10.gif"
               alt="never been more sane"
             />
           </div>
@@ -868,7 +868,7 @@ const Modal = ({ isOpen, onClose, image }) => {
               controls
               autoplay
             >
-              <source src="../public/bingchilling.mp4" type="video/mp4" />
+              <source src="bingchilling.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -888,7 +888,7 @@ const Modal = ({ isOpen, onClose, image }) => {
         <div className="modal-overlay" onClick={onClose}>
           <div onClick={(e) => e.stopPropagation()} style={containerStyle}>
             <video id="car" width="640" height="360" controls autoplay>
-              <source src="../public/car-full.mp4" type="video/mp4" />
+              <source src="car-full.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -897,7 +897,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     } else if (image.src.includes("image2.jpg")) {
       // lucky guy irl
 
-      const audio = new Audio("../public/punch.mp3");
+      const audio = new Audio("punch.mp3");
 
       setTimeout(() => {
         audio.play();
@@ -909,7 +909,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/luckypunch.gif"
+                src="luckypunch.gif"
                 alt="lucky guy irl punch"
               />
             )}
@@ -925,7 +925,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/gif15.gif"
+                src="gif15.gif"
                 alt="xarata dies"
               />
             )}
@@ -941,7 +941,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/gif11.gif"
+                src="gif11.gif"
                 alt="top tier survivor gameplay"
               />
             )}
@@ -951,7 +951,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     } else if (image.src.includes("image164.png")) {
       // 1st ann jumpscare
 
-      const audio = new Audio("../public/vineboom.mp3");
+      const audio = new Audio("vineboom.mp3");
       audio.play();
 
       return (
@@ -965,7 +965,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/gif12.gif"
+                src="gif12.gif"
                 alt="first ann real"
               />
             )}
@@ -975,7 +975,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     } else if (image.src.includes("image124.png")) {
       // double gun miss jumpscare
 
-      const audio = new Audio("../public/vineboom.mp3");
+      const audio = new Audio("vineboom.mp3");
 
       setTimeout(() => {
         audio.play();
@@ -996,7 +996,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/gif8.gif"
+                src="gif8.gif"
                 alt="double gun miss"
               />
             )}
@@ -1015,8 +1015,8 @@ const Modal = ({ isOpen, onClose, image }) => {
         console.log(showText);
 
         showText
-          ? (image.src = "../public/justamagnet-text.png")
-          : (image.src = "../public/justamagnet-notext.png");
+          ? (image.src = "justamagnet-text.png")
+          : (image.src = "justamagnet-notext.png");
       };
 
       return (
@@ -1042,7 +1042,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     } else if (image.src.includes("image15.jpg")) {
       // marshal
 
-      const audio = new Audio("../public/vineboom.mp3");
+      const audio = new Audio("vineboom.mp3");
       audio.play();
 
       return (
@@ -1051,7 +1051,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/image15-2.png"
+                src="image15-2.png"
                 alt="clerk marshal"
               />
             )}
@@ -1061,7 +1061,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     } else if (image.src.includes("image132.png")) {
       // very sus
 
-      const audio = new Audio("../public/vineboom.mp3");
+      const audio = new Audio("vineboom.mp3");
       audio.play();
 
       return (
@@ -1070,7 +1070,7 @@ const Modal = ({ isOpen, onClose, image }) => {
             {image && (
               <img
                 className="rounded mb-3 no-cursor"
-                src="../public/image132-2.png"
+                src="image132-2.png"
                 alt="lucky guy irl being lucky guy irl"
               />
             )}
