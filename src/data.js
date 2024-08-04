@@ -1,21 +1,21 @@
 export default [
   {
-    src: "../public/image62.png",
+    src: "../public/image62.PNG",
     title: "annoyance.",
     description: "March 8th, 2023",
   },
   {
-    src: "../public/image32.png",
+    src: "../public/image32.PNG",
     title: "the one and only.",
     description: "November 21st, 2023",
   },
   {
-    src: "../public/image31.png",
+    src: "../public/image31.PNG",
     title: "balposer true identity revealed",
     description: "November 20th, 2023",
   },
   {
-    src: "../public/image1.jpg",
+    src: "../public/image1.JPG",
     title: "Something you should continue doing",
     description: "March 17th, 2023",
   },
