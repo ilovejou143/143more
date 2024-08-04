@@ -6,7 +6,7 @@ const Question9 = () => {
       <div className="question question-open question-image">
         Question 9: <br />
         Explain the context of this meme and who made it
-        <img src="../public/question2.png" alt="candy" />
+        <img src="question2.png" alt="candy" />
       </div>
       <textarea />
       <div className="d-flex justify-content-center">

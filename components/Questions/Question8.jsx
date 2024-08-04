@@ -6,7 +6,7 @@ const Question8 = () => {
       <div className="question question-open question-image d-flex flex-column">
         Question 8: <br />
         Explain what is happening in this image and why it was drawn
-        <img src="../public/question.png" alt="pilot" />
+        <img src="question.png" alt="pilot" />
       </div>
       <textarea />
       <div className="d-flex justify-content-center">
