@@ -29,7 +29,7 @@ const Question4 = () => {
             onClick={() => {
               onAnswerClick("Natuurlijk");
 
-              const audio = new Audio("../public/gay.mp3");
+              const audio = new Audio("gay.mp3");
               audio.currentTime = 5.2;
               audio.play();
             }}
@@ -41,7 +41,7 @@ const Question4 = () => {
             onClick={() => {
               onAnswerClick("Nee");
 
-              const audio = new Audio("../public/yippie.mp3");
+              const audio = new Audio("yippie.mp3");
               audio.play();
             }}
           >

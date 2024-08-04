@@ -24,7 +24,7 @@ export function handleAnswerClick(
 }
 
 export function correctSFX() {
-  const paths = ["../public/correct.mp3", "../public/yippie.mp3", "../public/duocorrect.mp3"]
+  const paths = ["correct.mp3", "yippie.mp3", "duocorrect.mp3"]
   const random = Math.floor(Math.random() * 3);
   const audio = new Audio(paths[random]);
 
@@ -33,7 +33,7 @@ export function correctSFX() {
 
 
 export function wrongSFX() {
-  const paths = ["../public/vineboom.mp3", "../public/bruh.mp3", "../public/fart.mp3", "../public/wrong.mp3"]
+  const paths = ["vineboom.mp3", "bruh.mp3", "fart.mp3", "wrong.mp3"]
   const random = Math.floor(Math.random() * 4);
   const audio = new Audio(paths[random]);
 

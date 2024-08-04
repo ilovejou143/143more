@@ -20,12 +20,12 @@ const Question5 = () => {
     <div className="question-answers">
       <div className="question question-5 d-flex flex-column">
         Question 5: <br /> Solve
-        <img src="../integral.png" alt="funny integral" className="rounded" />
+        <img src="integral.png" alt="funny integral" className="rounded" />
         <a
           href="https://www.youtube.com/watch?v=7Znc0W57B10"
           target="_blank"
           onClick={() => {
-            const audio = new Audio("../public/mutahar.mp3");
+            const audio = new Audio("mutahar.mp3");
             audio.play();
           }}
         >
@@ -58,7 +58,7 @@ const Question5 = () => {
             className={`answer ${selectedAnswer === "🖕" ? "red" : ""}`}
             onClick={() => {
               onAnswerClick("🖕");
-              const audio = new Audio("../public/fyou.mp3");
+              const audio = new Audio("fyou.mp3");
               audio.play();
             }}
           >

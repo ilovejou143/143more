@@ -3,9 +3,9 @@ import { changeFavicon } from "../src/utils";
 
 const Quiz = () => {
   document.title = "<3";
-  changeFavicon("../public/hearta.svg");
+  changeFavicon("hearta.svg");
 
-  const audio = new Audio("../public/hooray.mp3");
+  const audio = new Audio("hooray.mp3");
   audio.play();
 
   return (

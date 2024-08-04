@@ -1,7 +1,7 @@
 import React from "react";
 
 const Error = () => {
-  const audio = new Audio("../public/electric.mp3");
+  const audio = new Audio("electric.mp3");
   audio.play();
 
   setTimeout(() => {
