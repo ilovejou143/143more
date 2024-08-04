@@ -766,7 +766,7 @@ const Modal = ({ isOpen, onClose, image }) => {
         }
       }, []);
 
-      const source = image.src.substring(0, 17) + "mp4";
+      const source = image.src.substring(0, 7) + "mp4";
 
       return (
         <div className="modal-overlay" onClick={onClose}>

@@ -599,7 +599,7 @@ export default [
   { src: "videoF.png", title: "", description: "" },
   { src: "video5.png", title: "", description: "" },
   { src: "image92.png", title: "", description: "" },
-  { src: "image135png", title: "", description: "" },
+  { src: "image135.png", title: "", description: "" },
   {
     src: "image151.png",
     title: "zixuan's favorite secret game",

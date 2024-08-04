@@ -11,7 +11,7 @@ const Detour = () => {
     };
   }, []);
 
-  const audio = new Audio("../public/spooky.mp3");
+  const audio = new Audio("spooky.mp3");
 
   audio.addEventListener("loadedmetadata", () => {
     audio.currentTime = 296;
@@ -27,7 +27,7 @@ const Detour = () => {
   });
 
   document.title = "???";
-  changeFavicon("../public/=).jpg");
+  changeFavicon("=).jpg");
 
   return (
     <div className="d-flex flex-column">

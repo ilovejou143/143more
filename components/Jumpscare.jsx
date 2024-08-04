@@ -8,9 +8,9 @@ const Jumpscare = () => {
 
   useEffect(() => {
     document.title = "???";
-    changeFavicon("../public/=).jpg");
+    changeFavicon("=).jpg");
 
-    const audio = new Audio("../public/jumpscare.mp3");
+    const audio = new Audio("jumpscare.mp3");
     audio.volume = 0.8;
 
     const handleCanPlayThrough = () => {
@@ -30,7 +30,7 @@ const Jumpscare = () => {
       document.body.classList.add("jumpscare");
 
       const timer = setTimeout(() => {
-        navigate("/quiz");
+        navigate("#/quiz");
       }, 1750);
 
       return () => {
