@@ -23,21 +23,21 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/quiz" element={<Quiz />} />
-      <Route path="/error" element={<Error />} />
-      <Route path="/detour" element={<Detour />} />
-      <Route path="/boo" element={<Jumpscare />} />
-      <Route path="/question1" element={<Question1 />} />
-      <Route path="/question2" element={<Question2 />} />
-      <Route path="/question3" element={<Question3 />} />
-      <Route path="/question4" element={<Question4 />} />
-      <Route path="/question5" element={<Question5 />} />
-      <Route path="/question6" element={<Question6 />} />
-      <Route path="/question7" element={<Question7 />} />
-      <Route path="/question8" element={<Question8 />} />
-      <Route path="/question9" element={<Question9 />} />
-      <Route path="/question10" element={<Question10 />} />
-      <Route path="/end" element={<End />} />
+      <Route path="143more/quiz" element={<Quiz />} />
+      <Route path="143more/error" element={<Error />} />
+      <Route path="143more/detour" element={<Detour />} />
+      <Route path="143more/boo" element={<Jumpscare />} />
+      <Route path="143more/question1" element={<Question1 />} />
+      <Route path="143more/question2" element={<Question2 />} />
+      <Route path="143more/question3" element={<Question3 />} />
+      <Route path="143more/question4" element={<Question4 />} />
+      <Route path="143more/question5" element={<Question5 />} />
+      <Route path="143more/question6" element={<Question6 />} />
+      <Route path="143more/question7" element={<Question7 />} />
+      <Route path="143more/question8" element={<Question8 />} />
+      <Route path="143more/question9" element={<Question9 />} />
+      <Route path="143more/question10" element={<Question10 />} />
+      <Route path="143more/end" element={<End />} />
     </Routes>
   );
 };
