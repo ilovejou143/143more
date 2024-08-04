@@ -20,12 +20,12 @@ export default [
     description: "March 17th, 2023",
   },
   {
-    src: "../public/image51.png",
+    src: "./public/image51.png",
     title: "❤️∆😳",
     description: "July 30th, 2023",
   },
   {
-    src: "../public/image25.jpg",
+    src: "public/image25.jpg",
     title:
       "mario.\n" +
       "\n" +
@@ -48,7 +48,7 @@ export default [
     description: "October 20th, 2023",
   },
   {
-    src: "../public/image30.jpg",
+    src: "image/image30.JPG",
     title: "WE MAKIN IT TO COA WITH THIS ONE 🔥🔥🔥",
     description: "November 20th, 2023",
   },
