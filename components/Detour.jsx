@@ -14,6 +14,8 @@ const Detour = () => {
   const stopAudio = () => {
     audio.pause();
     audio.currentTime = 296;
+
+    document.body.classList.remove("scary-mode");
   };
 
   return (
