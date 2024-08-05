@@ -3,29 +3,29 @@ import { changeFavicon } from "../src/utils";
 import "../src/scary.css";
 
 const Detour = () => {
-  useEffect(() => {
-    document.body.classList.add("scary-mode");
+  document.body.classList.add("scary-mode");
 
-    return () => {
-      document.body.classList.remove("scary-mode");
-    };
-  }, []);
+  document.title = "???";
+  changeFavicon("=).jpg");
 
   const audio = new Audio("spooky.mp3");
 
-  document.addEventListener("DOMContentLoaded", () => {
-    audio.currentTime = 296;
-    audio.volume = 0.08;
-    audio.play();
-  });
+  const playAudio = async () => {
+    try {
+      audio.currentTime = 296;
+      audio.volume = 0.08;
+      await audio.play();
+    } catch (error) {
+      console.error("Error playing audio:", error);
+    }
+  };
+
+  playAudio();
 
   const stopAudio = () => {
     audio.pause();
     audio.currentTime = 296;
   };
-
-  document.title = "???";
-  changeFavicon("=).jpg");
 
   return (
     <div className="d-flex flex-column">
