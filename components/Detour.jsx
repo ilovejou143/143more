@@ -13,22 +13,15 @@ const Detour = () => {
 
   const audio = new Audio("spooky.mp3");
 
-  audio.addEventListener("loadedmetadata", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     audio.currentTime = 296;
     audio.volume = 0.08;
-    audio.loop = true;
     audio.play();
-
-    setTimeout(() => {
-      audio.pause();
-      audio.currentTime = 296;
-      audio.play();
-    }, 129000);
   });
 
   const stopAudio = () => {
     audio.pause();
-    audio.currentTime = 0;
+    audio.currentTime = 296;
   };
 
   document.title = "???";

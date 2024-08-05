@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Error = () => {
-  const audio = new Audio("electric.mp3");
-  audio.play();
+  useEffect(() => {
+    const audio = new Audio("electric.mp3");
 
-  setTimeout(() => {
-    audio.pause();
-    audio.volume = 0.01;
-    audio.currentTime = 0;
-  }, 3000);
+    const playAudio = async () => {
+      try {
+        await audio.play();
+      } catch (error) {
+        console.error("Error playing audio:", error);
+      }
+    };
+
+    playAudio();
+
+    const timeoutId = setTimeout(() => {
+      audio.pause();
+      audio.volume = 0.01;
+      audio.currentTime = 0;
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeoutId);
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
 
   return (
     <div className="error-bg d-flex flex-column justify-content-center text-center">
