@@ -3,23 +3,27 @@ import { changeFavicon } from "../src/utils";
 import "../src/scary.css";
 
 const Detour = () => {
-  document.body.classList.add("scary-mode");
-
   useEffect(() => {
-    document.title = "???";
-    changeFavicon("=).jpg");
+    document.body.classList.add("scary-mode");
 
-    const audio = new Audio("spooky.mp3");
-    audio.volume = 0.08;
-    audio.currentTime = 296;
-    audio.play();
+    return () => {
+      document.body.classList.remove("scary-mode");
+    };
   }, []);
+
+  const audio = new Audio("../public/spooky.mp3");
+
+  audio.addEventListener("loadedmetadata", () => {
+    audio.volume = 0.08;
+    audio.play();
+  });
+
+  document.title = "???";
+  changeFavicon("../public/=).jpg");
 
   const stopAudio = () => {
     audio.pause();
-    audio.currentTime = 296;
-
-    document.body.classList.remove("scary-mode");
+    audio.currentTime = 0;
   };
 
   return (
