@@ -3,8 +3,9 @@ import { changeFavicon } from "../src/utils";
 import "../src/scary.css";
 
 const Detour = () => {
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("scary-mode");
+  document.body.classList.add("scary-mode");
+
+  useEffect(() => {
     document.title = "???";
     changeFavicon("=).jpg");
 
@@ -12,7 +13,7 @@ const Detour = () => {
     audio.volume = 0.08;
     audio.currentTime = 296;
     audio.play();
-  });
+  }, []);
 
   const stopAudio = () => {
     audio.pause();
