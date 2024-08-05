@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { changeFavicon } from '../src/utils';
+import { changeFavicon } from "../src/utils";
 import "../src/scary.css";
 
 const Detour = () => {
@@ -26,6 +26,11 @@ const Detour = () => {
     }, 129000);
   });
 
+  const stopAudio = () => {
+    audio.pause();
+    audio.currentTime = 0;
+  };
+
   document.title = "???";
   changeFavicon("=).jpg");
 
@@ -33,9 +38,9 @@ const Detour = () => {
     <div className="d-flex flex-column">
       <div className="scary-bg">
         <p>
-          On January 16th, 2025, Zixuan will die in a "completely accidental" car crash.
-          However, do not believe this lie. What will actually happen is an
-          attempted murder from ScamEase Games.
+          On January 16th, 2025, Zixuan will die in a "completely accidental"
+          car crash. However, do not believe this lie. What will actually happen
+          is an attempted murder from ScamEase Games.
         </p>
         <p>
           The reason for this is because they have noticed that she has defected
@@ -58,7 +63,7 @@ const Detour = () => {
           safe, as they can track you down.
         </p>
       </div>
-      <a href="#/boo" onClick={audio.pause()} className="scary-button run-button">
+      <a href="#/boo" onClick={stopAudio} className="scary-button run-button">
         Run.
       </a>
     </div>
