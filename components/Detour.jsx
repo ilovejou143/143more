@@ -5,22 +5,24 @@ import "../src/scary.css";
 const Detour = () => {
   document.body.classList.add("scary-mode");
 
-  document.title = "???";
-  changeFavicon("=).jpg");
+  useEffect(() => {
+    document.title = "???";
+    changeFavicon("=).jpg");
 
-  const audio = new Audio("spooky.mp3");
+    const audio = new Audio("spooky.mp3");
+    audio.volume = 0.08;
+    audio.currentTime = 296;
 
-  const playAudio = async () => {
-    try {
-      audio.currentTime = 296;
-      audio.volume = 0.08;
-      await audio.play();
-    } catch (error) {
-      console.error("Error playing audio:", error);
-    }
-  };
+    const handleCanPlayThrough = () => {
+      audio.play();
+    };
 
-  playAudio();
+    audio.addEventListener("canplaythrough", handleCanPlayThrough);
+
+    return () => {
+      audio.removeEventListener("canplaythrough", handleCanPlayThrough);
+    };
+  }, []);
 
   const stopAudio = () => {
     audio.pause();
