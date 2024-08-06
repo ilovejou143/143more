@@ -11,7 +11,7 @@ const Detour = () => {
     };
   }, []);
 
-  const audio = new Audio("../public/spooky.mp3");
+  const audio = new Audio("spooky.mp3");
 
   audio.addEventListener("loadedmetadata", () => {
     audio.volume = 0.08;
@@ -19,7 +19,7 @@ const Detour = () => {
   });
 
   document.title = "???";
-  changeFavicon("../public/=).jpg");
+  changeFavicon("=).jpg");
 
   const stopAudio = () => {
     audio.pause();
