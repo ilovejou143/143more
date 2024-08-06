@@ -15,6 +15,7 @@ const Detour = () => {
 
   audio.addEventListener("loadedmetadata", () => {
     audio.volume = 0.08;
+    audio.loop = true;
     audio.play();
   });
 
