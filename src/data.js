@@ -474,11 +474,7 @@ export default [
       "Ducky goes famous for being the star performer of the famous team ETL!",
     description: "June 14th, 2023",
   },
-  {
-    src: "image78.png",
-    title: "a mystery forever unsolved",
-    description: "April 18th, 2023",
-  },
+  { src: "image78.png", title: "", description: "" },
   {
     src: "image131.png",
     title: "that belongs in a musem",
@@ -781,7 +777,7 @@ export default [
     description: "August 2nd, 2023",
   },
 
-  { src: "image146.png", title: "", description: "" },
+  { src: "image146.png", title: "1 - 0", description: "obliderated." },
   {
     src: "image134.png",
     title: "famous last words",
@@ -805,7 +801,7 @@ export default [
   },
   { src: "image161.png", title: "", description: "" },
   { src: "videoA.png", title: "", description: "" },
-  { src: "wafflefartlove.gif", title: "", description: ""},
+  { src: "wafflefartlove.gif", title: "", description: "" },
   { src: "image154.png", title: "", description: "" },
   { src: "image148.png", title: "", description: "" },
   {

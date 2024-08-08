@@ -141,11 +141,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           />
           <div className="mt-3">
             <h2>{image.title}</h2>
-            <img
-              src="sunbear.png"
-              alt="sunbear"
-              className="no-cursor"
-            />
+            <img src="sunbear.png" alt="sunbear" className="no-cursor" />
           </div>
         </div>
       </div>
@@ -170,11 +166,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           />
           <div className="mt-3">
             <h2>{image.title}</h2>
-            <img
-              src="sunbear2.png"
-              alt="sunbear"
-              className="no-cursor"
-            />
+            <img src="sunbear2.png" alt="sunbear" className="no-cursor" />
           </div>
         </div>
       </div>
@@ -200,11 +192,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2>{image.title}</h2>
             <p>{image.description}</p>
-            <img
-              src="gif4.gif"
-              alt="xarata gaming"
-              className="no-cursor"
-            />
+            <img src="gif4.gif" alt="xarata gaming" className="no-cursor" />
           </div>
         </div>
       </div>
@@ -578,11 +566,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2 className="title">{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img
-              className="no-cursor"
-              src="kazuditch.gif"
-              alt="kazu ditch"
-            />
+            <img className="no-cursor" src="kazuditch.gif" alt="kazu ditch" />
           </div>
         </div>
       </div>
@@ -610,11 +594,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2 className="title">{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img
-              className="no-cursor"
-              src="mcdonald.gif"
-              alt="mcdonald"
-            />
+            <img className="no-cursor" src="mcdonald.gif" alt="mcdonald" />
             <p id="description">February 9th, 2024</p>
           </div>
         </div>
@@ -643,11 +623,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2 className="title">{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img
-              className="no-cursor"
-              src="gif9.gif"
-              alt="waffle gaming"
-            />
+            <img className="no-cursor" src="gif9.gif" alt="waffle gaming" />
           </div>
         </div>
       </div>
@@ -677,11 +653,7 @@ const Modal = ({ isOpen, onClose, image }) => {
           <div className="mt-3">
             <h2 className="title">{image.title}</h2>
             <p id="description">{image.description}</p>
-            <img
-              className="no-cursor"
-              src="gif6.gif"
-              alt="never gamging"
-            />
+            <img className="no-cursor" src="gif6.gif" alt="never gamging" />
           </div>
         </div>
       </div>
@@ -743,11 +715,7 @@ const Modal = ({ isOpen, onClose, image }) => {
     return (
       <div className="modal-overlay" onClick={onClose}>
         <div onClick={(e) => e.stopPropagation()} style={containerStyle}>
-          <img
-            className="rounded mb-3 no-cursor"
-            src="jerma.png"
-            alt="jerma"
-          />
+          <img className="rounded mb-3 no-cursor" src="jerma.png" alt="jerma" />
         </div>
       </div>
     );
@@ -917,7 +885,7 @@ const Modal = ({ isOpen, onClose, image }) => {
         </div>
       );
     } else if (image.src.includes("image121.png")) {
-      // lucky guy irl
+      // xarata dies
 
       return (
         <div className="modal-overlay" onClick={onClose}>
@@ -943,6 +911,30 @@ const Modal = ({ isOpen, onClose, image }) => {
                 className="rounded mb-3 no-cursor"
                 src="gif11.gif"
                 alt="top tier survivor gameplay"
+              />
+            )}
+          </div>
+        </div>
+      );
+    } else if (image.src.includes("image78.png")) {
+      // choke jumpscare
+
+      const audio = new Audio("vineboom.mp3");
+      audio.play();
+
+      return (
+        <div className="modal-overlay" onClick={onClose}>
+          <div
+            className="d-flex justify-content-center align-items-center"
+            onClick={(e) => e.stopPropagation()}
+            style={containerStyle}
+          >
+            <p className="funny">JOURNALIST CHOKE JUMPSCARE</p>
+            {image && (
+              <img
+                className="rounded mb-3 no-cursor"
+                src="choke.png"
+                alt="journalist choke"
               />
             )}
           </div>
